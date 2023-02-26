@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Salesboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <!-- Toggle button -->
+        <div class="toggle-button">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <div class='ball'></div>
+            </label>
+        </div>
+        <!-- -->
+        
+        <div class="container">
+            <h1>Salesboard 🔔</h1>
+        </div>
+        <img src="images/0xTak.jpg">
+        <div class="btns">
+            <button id="product-a" class="product-a">⭐</button>
+            <button id="product-b" class="product-b">🔥</button>
+        </div>
+        <div class="sales">
+            <h2 id="live-sales">Live Sales</h2>
+            <div id="sales" class="live-sales-bar"></div>
+        </div>
+        <div class="achievements">
+            <h2 id="live-achievements">Live Achievements</h2>
+            <div id="achievements" class="live-achievements-bar"></div>
+        </div>
+        <div class="bottom-two">
+            <div class="total-revenue">
+                <h2>Total Revenue</h2>
+                <div id="total-revenue" class="total-revenue-bar"></div>
+            </div>
+            <div class="total-commision">
+                <h2>Total Commision</h2>
+                <div id="total-commision" class="total-commision-bar"></div>
+            </div>
+        </div>
+        <div class="resetBtn">
+            <button id="reset-btn" class="reset-btn">RESET</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

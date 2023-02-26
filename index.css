@@ -1,0 +1,196 @@
+/*
+COLOR PALETTE
+
+BLACK: #201A23
+WHITE: #FBFBFB
+DARK: #44354A
+COLOR: #9E4770
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #CCC;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #595236;
+    width: 80%;
+    margin: 20px auto;
+    background: #E8EDDB;
+    border: 5px solid #C4ECD4;
+    border-radius: 10px;
+    transition: background 0.2s linear;
+    position: relative; /* add relative position to the body element */
+}
+
+.toggle-button {
+    outline: 2px solid red;
+    position: absolute; /* add absolute position to the toggle button element */
+    top: 20px; /* adjust the top position as needed */
+    right: 25px; /* adjust the right position as needed */
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+body.dark {
+    background-color: #201A23;
+    border-color: #44354A;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark .total-revenue-bar,
+body.dark .total-commision-bar {
+    color: #FFFFFF;
+}
+
+body.dark .live-sales-bar, 
+body.dark .live-achievements-bar, 
+body.dark .total-revenue-bar, 
+body.dark .total-commision-bar
+ {
+    background-color: #44354A;
+}
+
+body.dark .product-a,
+body.dark .product-b,
+body.dark .reset-btn {
+    background-color: #9E4770;
+}
+
+body.dark img {
+    border-color: #44354A;
+}
+
+.checkbox:checked + .label {
+    background-color: white;
+}
+
+.checkbox:checked + .label .ball {
+    background-color: black;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+    transform: translateX(16px);
+}
+
+.label {
+    width: 35px;
+    height: 18px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    padding: 3px;
+    transform: scale(1.5);
+}
+
+.ball {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+img {
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid #C4ECD4; 
+}
+
+.product-a,
+.product-b,
+.reset-btn {
+    background: #798154;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 2px;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 20%;
+}
+
+.live-sales-bar, 
+.live-achievements-bar, 
+.total-revenue-bar, 
+.total-commision-bar {
+    background-color: #FEF6DB;
+    border-radius: 50px;
+}
+
+.live-sales-bar,
+.live-achievements-bar {
+    padding-top: 0.6rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.live-sales-bar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bottom-two {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.total-revenue,
+.total-commision {
+    margin: 5px 10px;
+    width: 500px;
+}
+
+.total-revenue {
+    margin-left: 50px;
+}
+
+.total-commision {
+    margin-right: 50px;
+}
+
+.total-revenue-bar,
+.total-commision-bar {
+    font-size: 1.3em;
+    padding-top: 0.8rem;
+    height: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.reset-btn {
+    color: whitesmoke;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
